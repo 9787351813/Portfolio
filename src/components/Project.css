@@ -1,0 +1,59 @@
+.projects-container {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #02074c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-demo {
+  color: black;
+  background-color: orange;
+}
+
+.projects-heading {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.card-img-top {
+  width: 100%; /* Set the image to fill the card's width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1s ease-in-out;
+  color: white;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+  background-color: black;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(243, 240, 240, 0.2);
+}
+.tech-stack {
+  color: #007bff; /* Change this to any color you prefer */
+  font-weight: bold;
+}
+
+
+.project-card .btn {
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}

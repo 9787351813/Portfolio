@@ -1,0 +1,86 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  background-color: #02074c;
+  width: 100vw; /* Ensure the container takes the full viewport width */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.leftContainer {
+  flex: 1; /* Let the left container take up available space */
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--bg-Color);
+  border: 1px solid yellow;
+  color: white;
+  box-shadow: var(--box-shadow);
+  margin-right: 10px;
+  margin-left: 150px; /* Adjust margin to fit space between containers */
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: yellow;
+  border-radius: 5px;
+  color: yellow;
+  background-color: #030955;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  flex: 1; 
+  background-color:  #02074c ;
+ /* Let the right container take up available space */
+}
+
+.image {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%; /* Make the image circular */
+  border: 5px solid yellow;
+  animation: supreme 3s infinite ease-in-out, moveUpDown 3s infinite ease-in-out;
+}
+
+/* Keyframes for supreme animation (border color and shadow) */
+@keyframes supreme {
+  0% {
+    border-color: blue;
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+  25% {
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+  50% {
+    border-color: rgb(12, 12, 199);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+  75% {
+    border-color: rgb(119, 232, 159);
+    box-shadow: 10px 10px 100px 50px rgb(119, 232, 159);
+  }
+  100% {
+    border-color: rgb(50, 55, 205);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+/* Keyframes for moveUpDown animation (vertical movement) */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+}
