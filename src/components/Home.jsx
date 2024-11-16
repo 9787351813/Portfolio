@@ -5,7 +5,7 @@ import profileImage from './image/oviya.jpg';
 function Home() {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1j1OGvlF_LuOkP15B3AEbSTx3Ckuod7mb/view'; // Replace with your Google Drive file ID
+    link.href = 'https://drive.google.com/file/d/1sS99DM9RkiIwNxWGQ07Nf3-Bx8YDeeX4/view?usp=drive_link'; // Replace with your Google Drive file ID
     link.target = '_blank'; // This opens the link in a new tab
     link.click();
   };
